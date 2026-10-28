@@ -1,7 +1,56 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>youtube-uploader</title></head>
-<body style="font-family:system-ui;max-width:640px;margin:40px auto;padding:0 16px">
-<h1>youtube-uploader</h1>
-<p>Herramienta interna de SBCC Engineers Solutions S.A.C. para publicar videos en YouTube.</p>
-<ul><li><a href="youtube-privacidad.html">Política de Privacidad</a></li><li><a href="youtube-terminos.html">Términos del Servicio</a></li></ul>
-</body></html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoAlimite Uploader</title>
+    <meta name="description" content="Herramienta interna de SBCC Engineers Solutions S.A.C. para publicar en su canal VIDEOALIMITE videos ya aprobados, mediante los servicios de la API de YouTube.">
+    <style>
+        :root { --bg: #f6f7f9; --card: #ffffff; --text: #1d2330; --muted: #5b6475; --accent: #c4302b; --border: #e3e6ec; }
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #11141a; --card: #1a1f28; --text: #e7eaf0; --muted: #a2aab8; --accent: #ff6b63; --border: #2a303c; }
+        }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+        main { max-width: 780px; margin: 0 auto; padding: 32px 16px 48px; }
+        article { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px clamp(16px, 4vw, 40px); }
+        h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 4vw, 2rem); line-height: 1.25; }
+        h2 { margin: 28px 0 8px; font-size: 1.15rem; }
+        a { color: var(--accent); }
+        .api { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 999px; padding: 4px 14px 4px 8px; color: var(--muted); font-size: 0.95rem; }
+        .api svg { flex: none; }
+        .legal { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0 0; padding: 0; list-style: none; }
+        .legal a { display: inline-block; border: 1px solid var(--accent); border-radius: 8px; padding: 8px 14px; text-decoration: none; font-weight: 600; }
+        footer { text-align: center; color: var(--muted); font-size: 0.9rem; margin-top: 24px; }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>VideoAlimite Uploader</h1>
+            <p class="api">
+                <svg width="24" height="17" viewBox="0 0 24 17" aria-hidden="true"><rect width="24" height="17" rx="4" fill="#FF0000"/><path d="M9.6 4.8v7.4l6.2-3.7z" fill="#fff"/></svg>
+                Usa los servicios de la API de YouTube
+            </p>
+            <p>Herramienta interna de SBCC Engineers Solutions S.A.C. que publica en nuestro canal de YouTube <strong>VIDEOALIMITE</strong> los videos que nuestro equipo ya revisó y aprobó. Sube el video con su título, descripción, subtítulos y miniatura, y programa la hora de publicación.</p>
+            <p>No es un servicio público: solo la usan las cuentas de nuestra organización.</p>
+
+            <h2>Documentos legales</h2>
+            <ul class="legal">
+                <li><a href="youtube-privacidad.html">Política de Privacidad</a></li>
+                <li><a href="youtube-terminos.html">Términos del Servicio</a></li>
+            </ul>
+
+            <h2>Enlaces de YouTube y Google</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">Términos del Servicio de YouTube</a></li>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a></li>
+                <li><a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener">Revocar el acceso de la aplicación</a></li>
+            </ul>
+        </article>
+        <footer>
+            &copy; 2026 SBCC Engineers Solutions S.A.C. · RUC 20565764366 · <a href="mailto:ventas@sbccperu.com">ventas@sbccperu.com</a>
+        </footer>
+    </main>
+</body>
+</html>
